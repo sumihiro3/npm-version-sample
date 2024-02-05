@@ -15,8 +15,9 @@
     "version-patch": "npm version patch",
     "version-prepatch": "npm version prepatch --preid=beta",
     "version-prerelease": "npm version prerelease -m='[%s] ${npm_config_message}'",
-    "postversion": "git push && git push --tags && git archive ${npm_package_version} --output=tmp/archive/npm-version-sample_${npm_package_version}.zip",
-    "echo": "echo ${npm_config_message}"
+    "postversion": "git push && git push --tags && npm run archive && npm run archive",
+    "archive": "git archive v${npm_package_version} --output=tmp/archive/npm-version-sample_v${npm_package_version}.zip",
+    "echo": "echo hoge${npm_package_version}.zip"
   },
   "author": "sumihiro3",
   "license": "MIT"
