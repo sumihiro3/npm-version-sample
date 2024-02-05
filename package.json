@@ -1,6 +1,6 @@
 {
   "name": "npm-version-sample",
-  "version": "0.2.3",
+  "version": "0.3.0-0",
   "description": "npm version command sample",
   "main": "index.js",
   "scripts": {
