@@ -3,6 +3,9 @@
   "version": "0.4.0-beta.6",
   "description": "npm version command sample",
   "main": "index.js",
+  "config": {
+    "message": ""
+  },
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +15,8 @@
     "version-patch": "npm version patch",
     "version-prepatch": "npm version prepatch --preid=beta",
     "version-prerelease": "npm version prerelease --preid=beta -m='[%s] ${npm_config_message}'",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "echo": "echo ${npm_config_message}"
   },
   "author": "sumihiro3",
   "license": "MIT"
