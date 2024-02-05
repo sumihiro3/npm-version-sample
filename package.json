@@ -1,0 +1,12 @@
+{
+  "name": "npm-version-sample",
+  "version": "0.0.0",
+  "description": "npm version command sample",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sumihiro3",
+  "license": "MIT"
+}
